@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Recipe Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="nav-header">
+        <div class="nav">
+            <div class="logo">
+                <a>Flavour Fusion</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Recipes</a>
+                    <ul class="sub-links">
+                        <li><a href="">Pakistani</a></li>
+                        <li><a href="">Global Favourites</a></li>
+                        <li><a href="">Baking</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div>
+        <div class="header">
+            <h1>Contact Us</h1>
+        </div>
+
+        <main class="contact-content">
+            <div class="left-text">
+                <h2>Get in Touch</h2>
+                <hr>
+                <ol>
+                    <li>Got a question about our recipes, techniques, or ingredients? We’re here to help—just reach out,
+                        and we’ll get back to you with the answers you need.</li>
+                    <li>Your feedback is valuable to us. Whether you loved a recipe, have suggestions, or noticed
+                        something that could be improved, we want to hear it!</li>
+                    <li>Have a recipe you’re proud of? Share it with us, and you might see it featured on our site,
+                        credited to you as the culinary genius.</li>
+                    <li>Looking to collaborate? Whether you’re a food blogger, chef, or influencer, we’re open to
+                        exciting partnerships. Let’s create something delicious together.</li>
+                    <li>Don’t miss our latest recipes, tips, and offers. Follow us on social media and sign up for our
+                        newsletter to stay connected.</li>
+
+                </ol>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <a href="#" target="-main"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" target="-main"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" target="-main"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2 id="email">Want to give any suggestions? Shoot us an email.</h2>
+                <form action="https://api.web3forms.com/submit" method="POST" class="form">
+                    <input type="hidden" name="access_key" value="49c22f69-49e9-42f2-bfb2-ea796dd995e5">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="location">Your Location (City, Country)</label>
+                    <input type="text" id="location" name="location">
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <label for="satisfaction">How satisfied are you with our website?</label>
+                    <div class="slider-container">
+                        <input type="range" id="satisfaction" name="satisfaction" min="0" max="100" value="50">
+                        <div class="slider-value" id="slider-value">50</div>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h3>Flavour Fusion</h3>
+                        <p>Ready to make something amazing!</p>
+                    </div>
+
+
+                    <!--2nd column-->
+                    <div class="footer-col">
+                        <h3>Quick links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Recipes</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!--3rd Column-->
+                    <div class="footer-col">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Quality</a></li>
+                            <li><a href="#">Subscription</a></li>
+                            <li><a href="#">Make a choice</a></li>
+                        </ul>
+                    </div>
+                    <!--4th column-->
+                    <div class="footer-col">
+                        <h3>Cotact Us </h3>
+                        <form action="">
+                            <input type="type" placeholder="Your Name" class="inputName">
+                            <a href="./contact.html " class="contact-btn">Contact</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="links">
+                <h3>Follow US! </h3>
+                <a href="https://facebook.com"> <i class="fa-brands fa-facebook"></i> </a>
+                <a href="https://twitter.com"> <i class="fa-brands fa-twitter"></i> </a>
+                <a href="https://instagram.com"> <i class="fa-brands fa-instagram"></i> </a>
+                <a href="https://linkedin.com"> <i class="fa-brands fa-linkedin"></i> </a>
+                <a href="https://github.com"> <i class="fa-brands fa-github"></i> </a>
+            </div>
+            <div class="bottom">
+                <p>
+                    &copy; 2024.All Rights Reserved
+                </p>
+
+            </div>
+        </footer>
+        <script src="contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flavour Fusion || Recipes Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="nav">
+        <div class="logo">
+          <a>Flavour Fusion</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li>
+            <a href="#recipes">Recipes</a>
+            <ul class="sub-links">
+              <li><a href="">Pakistani</a></li>
+              <li><a href="">Global Favourites</a></li>
+              <li><a href="">Baking</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">About US</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="searchbar">
+          <label for="search">Search</label>
+          <input
+            type="text"
+            name=""
+            id="searchInput"
+            placeholder="Search Recipes.."
+          />
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="carousel next">
+        <div class="list">
+          <article class="item other_1">
+            <div class="main-content" style="background-color: #e0815b">
+              <div class="content">
+                <h2>Pakistani Chicken Biryani!</h2>
+                <p class="price">$ 20</p>
+                <p class="description">
+                  A masalaydaar Pakistani Chicken Biryani simplified, tested,
+                  and retested to create a Classic Karachi style Biryani that
+                  delivers authentic flavours without spice packets or bits of
+                  whole spices in your mouth!
+                </p>
+                <a href="#recipes" class="addToCard">View Recipe</a>
+              </div>
+            </div>
+            <figure class="image">
+              <img src="./Assets/biryani.webp" alt="" />
+              <figcaption>Pakistani Chicken Biryani!</figcaption>
+            </figure>
+          </article>
+
+          <article class="item active">
+            <div class="main-content" style="background-color: #f5bfaf">
+              <div class="content">
+                <h2>Chicken Curry with Coconut Milk</h2>
+                <p class="price">$ 20</p>
+                <p class="description">
+                  This Chicken Curry with Coconut milk and Potatoes is creamy
+                  and comforting yet light and so flavorful. All you need is one
+                  pot and 40 minutes to make this easy, healthy, family-friendly
+                  recipe. Use potatoes, bell peppers, or whatever veggies you’ve
+                  got on hand. No curry paste required!
+                </p>
+                <a href="#recipes" class="addToCard">View Recipe</a>
+              </div>
+            </div>
+            <figure class="image">
+              <img src="./Assets/chickenCurry.webp" alt="" />
+              <figcaption>Chicken Curry with Coconut Milk</figcaption>
+            </figure>
+          </article>
+
+          <article class="item other_2">
+            <div class="main-content" style="background-color: #dedfe1">
+              <div class="content">
+                <h2>Pakistani Chicken Karahi</h2>
+                <p class="price">$ 20</p>
+                <p class="description">
+                  Chicken Karahi, or Kadai chicken, is undoubtedly one of the
+                  most popular curries in and out of Pakistan and India. This is
+                  a restaurant-style Pakistani Chicken Karahi recipe that can be
+                  prepared quickly and easily with no finicky steps. Tested,
+                  perfected, and loved by thousands!
+                </p>
+                <a href="#recipes" class="addToCard">View Recipe</a>
+              </div>
+            </div>
+            <figure class="image">
+              <img src="./Assets/Chicken-Karahi.webp" alt="" />
+              <figcaption>Pakistani Chicken Karahi</figcaption>
+            </figure>
+          </article>
+
+          <article class="item">
+            <div class="main-content" style="background-color: #9ecf65">
+              <div class="content">
+                <h2>Chicken Shashlik (Saucy with Gravy)</h2>
+                <p class="price">$ 20</p>
+                <p class="description">
+                  Chicken Shashlik is an Indo-Chinese recipe made with boneless
+                  chicken, bell peppers, and red onion. Similar to Chicken
+                  Manchurian, this dish is coated in a sweet and spicy gravy
+                  that’s bursting with flavor. This is a unique, flavorful, and
+                  kid-friendly weeknight dinner that can be made quickly and
+                  easily using pantry staples.
+                </p>
+                <a href="#recipes" class="addToCard">View Recipe</a>
+              </div>
+            </div>
+            <figure class="image">
+              <img src="./Assets/Chicken-Shashlik-6.jpg" alt="" />
+              <figcaption>Chicken Shashlik (Saucy with Gravy)</figcaption>
+            </figure>
+          </article>
+        </div>
+        <div class="arrows">
+          <button id="prev">&lt;</button>
+          <button id="next">&gt;</button>
+        </div>
+      </section>
+      <div class="menu" id="recipes">
+        <div>
+          <h1>Our <span class="orange">Regular</span> Recipes</h1>
+          <p>There Are Our Regular Recipes.You Can View Anything You Like.</p>
+        </div>
+        <div>
+          <button class="list active" onclick="filterCards('all')">
+            See All
+          </button>
+          <button class="list" onclick="filterCards('pakistani')">
+            Pakistani
+          </button>
+          <button class="list" onclick="filterCards('indian')">Indian</button>
+          <button class="list" onclick="filterCards('chinese')">Chinese</button>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card pakistani">
+          <img
+            src="./Assets/Pakistani/chicken fry with fries.jpg"
+            alt="Pakistan Food"
+          />
+          <div class="card-content">
+            <div class="card-header">
+              <h3>40 min</h3>
+              <h3>Chicken Nihari</h3>
+            </div>
+            <div class="card-body">
+              <div class="rating">
+                <span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <div class="read-more">
+                <a href="./nihari.html" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card pakistani">
+          <img src="./Pictures/Donuts.jfif" alt="Pakistan Food" />
+          <div class="card-content">
+            <div class="card-header">
+              <h3>40 min</h3>
+              <h3>Donuts</h3>
+            </div>
+            <div class="card-body">
+              <div class="rating">
+                <span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <div class="read-more">
+                <a href="./glazedDonut.html" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card pakistani">
+          <img
+            src="./Assets/Pakistani/chicken biryani.jpg"
+            alt="Pakistan Food"
+          />
+          <div class="card-content">
+            <div class="card-header">
+              <h3>40 min</h3>
+              <h3>Chicken Biryani</h3>
+            </div>
+            <div class="card-body">
+              <div class="rating">
+                <span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <div class="read-more">
+                <a href="./biryani.html" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card pakistani">
+          <img src="./Assets/Pakistani/chicken tikka.jpg" alt="Pakistan Food" />
+          <div class="card-content">
+            <div class="card-header">
+              <h3>40 min</h3>
+              <h3>Chicken Tikka</h3>
+            </div>
+            <div class="card-body">
+              <div class="rating">
+                <span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <div class="read-more">
+                <a href="./chickentikka.html" class="read-more-btn"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card indian">
+          <img
+            src="./Assets/indian/chick peas curry indian.jpg"
+            alt="Indian Food"
+          />
+          <div class="card-content">
+            <div class="card-header">
+              <h3>40 min</h3>
+              <h3>Peas Curry</h3>
+            </div>
+            <div class="card-body">
+              <div class="rating">
+                <span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <div class="read-more">
+                <a href="./chickpeascurry.html" class="read-more-btn"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card indian">
+          <img
+            src="./Assets/indian/Chicken tikka indian.jpg"
+            alt="Indian Food"
+          />
+          <div class="card-content">
+            <div class="card-header">
+              <h3>40 min</h3>
+              <h3>Indian Tikka</h3>
+            </div>
+            <div class="card-body">
+              <div class="rating">
+                <span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <div class="read-more">
+                <a href="./chickentikka.html" class="read-more-btn"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card indian">
+          <img
+            src="./Assets/indian/indian (butter chicken).jpg"
+            alt="Indian Food"
+          />
+          <div class="card-content">
+            <div class="card-header">
+              <h3>40 min</h3>
+              <h3>Buttor Chicken</h3>
+            </div>
+            <div class="card-body">
+              <div class="rating">
+                <span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <div class="read-more">
+                <a href="./butterchicken.html" class="read-more-btn"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card chinese">
+          <img src="./Pictures/muffins.jfif" alt="Chinese Food" />
+          <div class="card-content">
+            <div class="card-header">
+              <h3>40 min</h3>
+              <h3>Chinese Muffins</h3>
+            </div>
+            <div class="card-body">
+              <div class="rating">
+                <span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <div class="read-more">
+                <a href="./muffins.html" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card chinese">
+          <img src="./Pictures/Pasta.jfif" alt="Chinese Food" />
+
+          <div class="card-content">
+            <div class="card-header">
+              <h3>40 min</h3>
+              <h3>White Pasta</h3>
+            </div>
+            <div class="card-body">
+              <div class="rating">
+                <span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <div class="read-more">
+                <a href="./whiteSaucePasta.html" class="read-more-btn"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card chinese">
+          <img src="./Pictures/matarPaneer.jfif" alt="Chinese Food" />
+
+          <div class="card-content">
+            <div class="card-header">
+              <h3>40 min</h3>
+              <h3>Matar Paneer</h3>
+            </div>
+            <div class="card-body">
+              <div class="rating">
+                <span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <div class="read-more">
+                <a href="./matarpaneer.html" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="Main">
+        <h2>Team members</h2>
+        <div class="wrapper">
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img
+                  src="https://th.bing.com/th/id/OIP.XInS9mJEeUk5FPPiZijcxgHaHa?pid=ImgDet&w=208&h=208&c=7&dpr=1.5"
+                />
+                <div class="contact-info">
+                  <div class="Name">Ayesha Rana</div>
+                  <div class="Gmail">rana.ayesha590@gmail.com</div>
+                </div>
+              </div>
+              <div class="slide">
+                <img
+                  src="https://drive.google.com/thumbnail?id=13b8H0eYahf5RL0WUsu3dOzdnpDSboSay"
+                />
+                <div class="contact-info">
+                  <div class="Name">Aansa Ghaffar</div>
+                  <div class="Gmail">ansaghaffar@719gmail.com</div>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="./Assets/img.jpeg" />
+                <div class="contact-info">
+                  <div class="Name">Abiha Munawar</div>
+                  <div class="Gmail">abiha.munawar12@gmail.com</div>
+                </div>
+              </div>
+              <div class="slide">
+                <img
+                  src="https://th.bing.com/th/id/OIP.XInS9mJEeUk5FPPiZijcxgHaHa?pid=ImgDet&w=208&h=208&c=7&dpr=1.5"
+                />
+                <div class="contact-info">
+                  <div class="Name">Tabban Ghani</div>
+                  <div class="Gmail">tabbanghani123@gmail.com</div>
+                </div>
+              </div>
+              <div class="slide">
+                <img
+                  src="https://th.bing.com/th/id/OIP.XInS9mJEeUk5FPPiZijcxgHaHa?pid=ImgDet&w=208&h=208&c=7&dpr=1.5"
+                />
+                <div class="contact-info">
+                  <div class="Name">Momina Afzaal</div>
+                  <div class="Gmail">mominaafzaal00@gmail.com</div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img src="https://i.ibb.co/gzsYJ8y/profile.png" />
+                <div class="contact-info">
+                  <div class="Name">Mudassar Ali</div>
+                  <div class="Gmail">mudassir18102003@gmail.com</div>
+                </div>
+              </div>
+              <div class="slide">
+                <img
+                  src="https://tse4.mm.bing.net/th?id=OIP.B1cdKNp6Mhs8LZg40anh_QAAAA&pid=Api&P=0&h=220"
+                />
+                <div class="contact-info">
+                  <div class="Name">Jawad Shahani</div>
+                  <div class="Gmail">jawadshahani110@gmail.com</div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img
+                  src="https://drive.google.com/thumbnail?id=1IFzGRFeHwS0l_3Qri0Uu9EKXjOKaVZ8T"
+                />
+                <div class="contact-info">
+                  <div class="Name">Muhammad Furqan</div>
+                  <div class="Gmail">muhammadfurqanishaq0@gmail.com</div>
+                </div>
+              </div>
+              <div class="slide">
+                <img
+                  src="https://drive.google.com/thumbnail?id=1JK6IEnTb6jtHRIMEAm_EMMOHZ7O62DXX"
+                />
+                <div class="contact-info">
+                  <div class="Name">Abdulahad Hussain</div>
+                  <div class="Gmail">abdulahadhussain60@gmail.com</div>
+                </div>
+              </div>
+              <div class="slide">
+                <img
+                  src="https://tse4.mm.bing.net/th?id=OIP.B1cdKNp6Mhs8LZg40anh_QAAAA&pid=Api&P=0&h=220"
+                />
+                <div class="contact-info">
+                  <div class="Name">Uzair Ismail</div>
+                  <div class="Gmail">uzairismailandco@gmail.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <h1 class="heading">FAQS About Website</h1>
+      <div class="faq-container">
+        <div class="faq active">
+          <h3 class="faq-title">How do I find a specific recipe?</h3>
+
+          <p class="faq-text">
+            You can use the search bar at the top of the app to find recipes by
+            name.
+          </p>
+
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="faq">
+          <h3 class="faq-title">Can I save my favorite recipes?</h3>
+          <p class="faq-text">
+            Currently, the website does not support saving recipes
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="faq">
+          <h3 class="faq-title">
+            What types of recipes are available in the website?
+          </h3>
+          <p class="faq-text">
+            The app offers a variety of recipes, including Pakistani, Chinese,
+            Italian, and baking recipes.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="faq">
+          <h3 class="faq-title">
+            Can I adjust the serving size of the recipe?
+          </h3>
+          <p class="faq-text">
+            The website currently provides standard serving sizes. You'll need
+            to manually adjust ingredient quantities if needed.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="faq">
+          <h3 class="faq-title">Are the recipes suitable for beginners?</h3>
+          <p class="faq-text">
+            Yes, the recipes are designed to be easy to follow, with
+            step-by-step instructions.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="faq">
+          <h3 class="faq-title">How often are new recipes added?</h3>
+          <p class="faq-text">
+            The website is currently in its basic version, and new recipes may
+            be added in future updates.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h3>Flavour Fusion</h3>
+            <p>Ready to make something amazing!</p>
+          </div>
+
+          <!--2nd column-->
+          <div class="footer-col">
+            <h3>Quick links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Recipes</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <!--3rd Column-->
+          <div class="footer-col">
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Quality</a></li>
+              <li><a href="#">Subscription</a></li>
+              <li><a href="#">Make a choice</a></li>
+            </ul>
+          </div>
+          <!--4th column-->
+          <div class="footer-col">
+            <h3>Cotact Us</h3>
+            <form action="">
+              <input type="type" placeholder="Your Name" class="inputName" />
+              <a href="./contact.html" class="contact-btn">Contact</a>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="links">
+        <h3>Follow US!</h3>
+        <a href="https://facebook.com">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com"> <i class="fa-brands fa-twitter"></i> </a>
+        <a href="https://instagram.com">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com"> <i class="fa-brands fa-github"></i> </a>
+      </div>
+      <div class="bottom">
+        <p>&copy; 2024.All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
